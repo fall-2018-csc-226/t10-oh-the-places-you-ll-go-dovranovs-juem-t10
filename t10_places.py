@@ -35,8 +35,6 @@ def parse_file(filename):
     str_num = file_content.readline()           # The first line of the file, which is the number of entries in the file
     str_num = int(str_num[:-1])                 # The '/n' character needs to be removed
 
-    a = extract_place(file_content)
-    print(a)
     places_list = []
     for i in range(str_num):
         places_list.append(extract_place(file_content))         # Assembles the list of places
@@ -88,27 +86,17 @@ def extract_place(file_content):
     :param file_content: contents of the file which represents all places
     :return: a tuple representing a single place.
     """
-
-    # TODO   Read the next five lines of the file, we've done the first one for you (name = ...).
-    #for i in range(4):
     name = file_content.readline().strip("\n")
-    # TODO   The order of the lines are: name, location, latitude, longitude, and user color.
     location = file_content.readline().strip("\n")
-    latitude = file_content.readline().strip("\n")
-    print(float(latitude))
-    longitude = file_content.readline().strip("\n")
-    print(float(longitude))
+    latitude = float(file_content.readline().strip("\n"))
+    longitude = float(file_content.readline().strip("\n"))
+
     user_color = file_content.readline().strip("\n")
-    # TODO   Take a look at places.txt to see the structure of the data.
-    # TODO   Just like above (line 37), you need to remove the last character (\n).
     # TODO   Once you've got the code working for all five lines, add a conditional that checks to see if
     # TODO   the line starts with a #; if it does, ignore that line.
-
-
-
-    # FIXME Construct a tuple with all five values in the correct order. Don't forget types, and tuples are immutable!
     # Example: place_tuple = ("Scott's example", "Somewhere special", 41, -10, "black")
     place_tuple = (name, location, latitude, longitude, user_color)      # Finish assembling the tuple!
+    # print(place_tuple)
     return place_tuple
 
 
