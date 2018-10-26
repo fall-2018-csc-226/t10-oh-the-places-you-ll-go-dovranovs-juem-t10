@@ -1,24 +1,25 @@
 4
-Scott
-Hometown: New Virginia, IA
-41.156537
--93.7107200
+Sahet
+Hometown: Kerki, Turkmenistan
+37.831048
+65.214553
 darkblue
-Scott
-Awesome city: Edinburgh, Scotland
-55.950190
--3.187550
-lightgreen
-Emily
-Hometown: Pittsburgh, PA
-40.932850
--80.358543
+Sahet
+Awesome City: Seoul, South Korea
+37.566536
+126.977966
 orange
-Emily
-Most Interesting Place: Reykjavik, Iceland
-64.147210
--21.942400
+May
+Birth Place: Mae Sot, Thailand
+16.713379
+98.569928
+lightgreen
+May
+Current City: Louisville, Kentucky
+38.256081
+-85.751572
 red
+
 
 
 # NOTES:
